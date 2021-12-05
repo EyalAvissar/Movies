@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.m
-//  Movies
+//  MoviesWithData
 //
-//  Created by inmanage on 05/12/2021.
+//  Created by inmanage on 07/11/2021.
 //
 
 #import "SceneDelegate.h"
@@ -54,7 +54,7 @@
     // to restore the scene back to its current state.
 
     // Save changes in the application's managed object context when the application transitions to the background.
-    [(AppDelegate *)UIApplication.sharedApplication.delegate saveContext];
+//    [(AppDelegate *)UIApplication.sharedApplication.delegate saveContext];
 }
 
 
