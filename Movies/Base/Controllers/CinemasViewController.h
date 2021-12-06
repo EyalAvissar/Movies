@@ -1,19 +1,19 @@
+////
+////  CinemasViewController.h
+////  MoviesWithData
+////
+////  Created by inmanage on 15/11/2021.
+////
 //
-//  CinemasViewController.h
-//  MoviesWithData
+//#import <UIKit/UIKit.h>
+//#import "MenuProtocol.h"
 //
-//  Created by inmanage on 15/11/2021.
+//NS_ASSUME_NONNULL_BEGIN
 //
-
-#import <UIKit/UIKit.h>
-#import "MenuProtocol.h"
-
-NS_ASSUME_NONNULL_BEGIN
-
-@interface CinemasViewController : UIViewController <MenuProtocol, UITableViewDelegate, UITableViewDataSource>
-
-@property (weak, nonatomic) IBOutlet UITableView *cinemasTable;
-
-@end
-
-NS_ASSUME_NONNULL_END
+//@interface CinemasViewController : UIViewController <MenuProtocol, UITableViewDelegate, UITableViewDataSource>
+//
+//@property (weak, nonatomic) IBOutlet UITableView *cinemasTable;
+//
+//@end
+//
+//NS_ASSUME_NONNULL_END

@@ -35,7 +35,6 @@
 		E80ADEFE275CEEF000F46327 /* MovieImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E80ADE7F275CE4B700F46327 /* MovieImageRequest.m */; };
 		E80ADEFF275CEF0000F46327 /* GeneralDeclarationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E80ADE52275CE4B600F46327 /* GeneralDeclarationResponse.m */; };
 		E80ADF00275CEF0D00F46327 /* BaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E80ADE38275CE4B600F46327 /* BaseManager.m */; };
-		E80ADF01275CEF1400F46327 /* CinemasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E80ADE95275CE4B700F46327 /* CinemasViewController.m */; };
 		E80ADF02275CEF2300F46327 /* ClearSessionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E80ADE72275CE4B600F46327 /* ClearSessionRequest.m */; };
 		E80ADF03275CEF2C00F46327 /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E80ADE7D275CE4B700F46327 /* BaseRequest.m */; };
 		E80ADF04275CEF3400F46327 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E80ADE37275CE4B600F46327 /* RequestManager.m */; };
@@ -76,7 +75,6 @@
 		E80ADF27275CF0CD00F46327 /* GetHostUrlResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E80ADE47275CE4B600F46327 /* GetHostUrlResponse.m */; };
 		E80ADF28275CF0DA00F46327 /* NoInternetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E80ADE4D275CE4B600F46327 /* NoInternetResponse.m */; };
 		E80ADF29275CF0E700F46327 /* NewCinemaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E80ADE99275CE4B700F46327 /* NewCinemaViewController.m */; };
-		E80ADF2C275CF11000F46327 /* CinemaTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E80ADEAA275CE4B700F46327 /* CinemaTableCell.m */; };
 		ED3DA53F568D581B3A72C650 /* Pods_MoviesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F37A3AE7C87AACFEEE47D5A /* Pods_MoviesTests.framework */; };
 		F88A527ECD6CCCBA831FB640 /* Pods_Movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D74C9BB6369E190A7F2B9D /* Pods_Movies.framework */; };
 /* End PBXBuildFile section */
@@ -495,24 +493,24 @@
 		E80ADE88275CE4B700F46327 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E80ADE89275CE4B700F46327 /* MapController.h */,
-				E80ADE8A275CE4B700F46327 /* LoadingViewController.m */,
 				E80ADE8B275CE4B700F46327 /* ArrayTransformer.h */,
-				E80ADE8C275CE4B700F46327 /* MenuViewController.h */,
-				E80ADE8D275CE4B700F46327 /* MoviesViewController.h */,
+				E80ADE93275CE4B700F46327 /* ArrayTransformer.m */,
+				E80ADE96275CE4B700F46327 /* BannerViewController.h */,
 				E80ADE8E275CE4B700F46327 /* BannerViewController.m */,
 				E80ADE8F275CE4B700F46327 /* CinemasViewController.h */,
-				E80ADE90275CE4B700F46327 /* DetailViewController.m */,
-				E80ADE91275CE4B700F46327 /* NewCinemaViewController.h */,
-				E80ADE92275CE4B700F46327 /* MapController.m */,
-				E80ADE93275CE4B700F46327 /* ArrayTransformer.m */,
-				E80ADE94275CE4B700F46327 /* LoadingViewController.h */,
 				E80ADE95275CE4B700F46327 /* CinemasViewController.m */,
-				E80ADE96275CE4B700F46327 /* BannerViewController.h */,
-				E80ADE97275CE4B700F46327 /* MoviesViewController.m */,
-				E80ADE98275CE4B700F46327 /* MenuViewController.m */,
-				E80ADE99275CE4B700F46327 /* NewCinemaViewController.m */,
 				E80ADE9A275CE4B700F46327 /* DetailViewController.h */,
+				E80ADE90275CE4B700F46327 /* DetailViewController.m */,
+				E80ADE94275CE4B700F46327 /* LoadingViewController.h */,
+				E80ADE8A275CE4B700F46327 /* LoadingViewController.m */,
+				E80ADE89275CE4B700F46327 /* MapController.h */,
+				E80ADE92275CE4B700F46327 /* MapController.m */,
+				E80ADE8C275CE4B700F46327 /* MenuViewController.h */,
+				E80ADE98275CE4B700F46327 /* MenuViewController.m */,
+				E80ADE8D275CE4B700F46327 /* MoviesViewController.h */,
+				E80ADE97275CE4B700F46327 /* MoviesViewController.m */,
+				E80ADE91275CE4B700F46327 /* NewCinemaViewController.h */,
+				E80ADE99275CE4B700F46327 /* NewCinemaViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -520,26 +518,26 @@
 		E80ADE9B275CE4B700F46327 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E80ADE9C275CE4B700F46327 /* CategoryCollectionCell.xib */,
-				E80ADE9D275CE4B700F46327 /* MovieTableCell.h */,
-				E80ADE9E275CE4B700F46327 /* NewCinemaViewCell.h */,
-				E80ADE9F275CE4B700F46327 /* CinemaTableCell.h */,
 				E80ADEA0275CE4B700F46327 /* CategoryCollectionCell.h */,
-				E80ADEA1275CE4B700F46327 /* MovieTableCell.xib */,
-				E80ADEA2275CE4B700F46327 /* NewCinemaTableViewCell.m */,
-				E80ADEA3275CE4B700F46327 /* CinemaCollectionViewCell.h */,
-				E80ADEA4275CE4B700F46327 /* CustomAnnotation.h */,
-				E80ADEA5275CE4B700F46327 /* TestTableViewCell.xib */,
-				E80ADEA6275CE4B700F46327 /* CinemaTableCell.xib */,
-				E80ADEA7275CE4B700F46327 /* CinemaCollectionViewCell.xib */,
-				E80ADEA8275CE4B700F46327 /* MovieTableCell.m */,
 				E80ADEA9275CE4B700F46327 /* CategoryCollectionCell.m */,
-				E80ADEAA275CE4B700F46327 /* CinemaTableCell.m */,
-				E80ADEAB275CE4B700F46327 /* NewCinemaViewCell.m */,
-				E80ADEAC275CE4B700F46327 /* NewCinemaTableViewCell.h */,
-				E80ADEAD275CE4B700F46327 /* TestCollectionViewCell.xib */,
-				E80ADEAE275CE4B700F46327 /* CustomAnnotation.m */,
+				E80ADE9C275CE4B700F46327 /* CategoryCollectionCell.xib */,
+				E80ADEA3275CE4B700F46327 /* CinemaCollectionViewCell.h */,
 				E80ADEAF275CE4B700F46327 /* CinemaCollectionViewCell.m */,
+				E80ADEA7275CE4B700F46327 /* CinemaCollectionViewCell.xib */,
+				E80ADE9F275CE4B700F46327 /* CinemaTableCell.h */,
+				E80ADEAA275CE4B700F46327 /* CinemaTableCell.m */,
+				E80ADEA6275CE4B700F46327 /* CinemaTableCell.xib */,
+				E80ADEA4275CE4B700F46327 /* CustomAnnotation.h */,
+				E80ADEAE275CE4B700F46327 /* CustomAnnotation.m */,
+				E80ADE9D275CE4B700F46327 /* MovieTableCell.h */,
+				E80ADEA8275CE4B700F46327 /* MovieTableCell.m */,
+				E80ADEA1275CE4B700F46327 /* MovieTableCell.xib */,
+				E80ADEAC275CE4B700F46327 /* NewCinemaTableViewCell.h */,
+				E80ADEA2275CE4B700F46327 /* NewCinemaTableViewCell.m */,
+				E80ADE9E275CE4B700F46327 /* NewCinemaViewCell.h */,
+				E80ADEAB275CE4B700F46327 /* NewCinemaViewCell.m */,
+				E80ADEAD275CE4B700F46327 /* TestCollectionViewCell.xib */,
+				E80ADEA5275CE4B700F46327 /* TestTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -799,7 +797,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E80ADF2C275CF11000F46327 /* CinemaTableCell.m in Sources */,
 				E80ADF29275CF0E700F46327 /* NewCinemaViewController.m in Sources */,
 				E80ADF28275CF0DA00F46327 /* NoInternetResponse.m in Sources */,
 				E80ADF27275CF0CD00F46327 /* GetHostUrlResponse.m in Sources */,
@@ -840,7 +837,6 @@
 				E80ADF04275CEF3400F46327 /* RequestManager.m in Sources */,
 				E80ADF03275CEF2C00F46327 /* BaseRequest.m in Sources */,
 				E80ADF02275CEF2300F46327 /* ClearSessionRequest.m in Sources */,
-				E80ADF01275CEF1400F46327 /* CinemasViewController.m in Sources */,
 				E80ADF00275CEF0D00F46327 /* BaseManager.m in Sources */,
 				E80ADEFF275CEF0000F46327 /* GeneralDeclarationResponse.m in Sources */,
 				E80ADEFE275CEEF000F46327 /* MovieImageRequest.m in Sources */,

@@ -67,13 +67,13 @@ static MoviesManager *_sharedInstance = nil;
     return menuVC;
 }
 
-+(CATransition *)setPresentationStyle {
-    CATransition *transition = [[CATransition alloc] init];
-    transition.duration = 0.5;
-    transition.type = kCATransitionPush;
-    transition.subtype = kCATransitionFromRight;
-    [transition setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
-    return transition;
-}
+//+(CATransition *)setPresentationStyle {
+//    CATransition *transition = [[CATransition alloc] init];
+//    transition.duration = 0.5;
+//    transition.type = kCATransitionPush;
+//    transition.subtype = kCATransitionFromRight;
+//    [transition setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+//    return transition;
+//}
 
 @end

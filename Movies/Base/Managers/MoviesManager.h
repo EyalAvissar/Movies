@@ -14,7 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MoviesManager : BaseRequest
 
 +(MoviesManager *)sharedInstance;
-+(UIManagedDocument *)prepareUIManagedDocumentFor:(NSURL *)url;
 +(CATransition *)setPresentationStyle; //move to Utilities?
 
 @property NSArray *moviesArray;

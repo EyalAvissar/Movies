@@ -12,6 +12,7 @@
 #import "CinemaCollectionViewCell.h"
 #import <CoreData/CoreData.h>
 #import "CinemasViewController.h"
+#import "NewCinemaViewController.h"
 #import "MoviesViewController.h"
 #import "MapController.h"
 #import "Utility.h"
@@ -205,7 +206,9 @@
     }
     
     if (pressed == 1) {
-        CinemasViewController *cinemasVC = [storyBoard instantiateViewControllerWithIdentifier:@"Cinemas"];
+        NewCinemaViewController *cinemasVC = [storyBoard instantiateViewControllerWithIdentifier:@"Cinemas"];
+//        CinemasViewController *cinemasVC = [storyBoard instantiateViewControllerWithIdentifier:@"Cinemas"];
+//
         [[self navigationController] pushViewController:cinemasVC animated:true];
     }
     
