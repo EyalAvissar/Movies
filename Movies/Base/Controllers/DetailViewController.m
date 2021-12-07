@@ -207,15 +207,9 @@
     
     if (pressed == 1) {
         NewCinemaViewController *cinemasVC = [storyBoard instantiateViewControllerWithIdentifier:@"Cinemas"];
-//        CinemasViewController *cinemasVC = [storyBoard instantiateViewControllerWithIdentifier:@"Cinemas"];
-//
+
         [[self navigationController] pushViewController:cinemasVC animated:true];
     }
-    
-//    [menuController dismissViewControllerAnimated:true completion:nil];
-    
-//    [[[self navigationController].viewControllers objectAtIndex:[[self navigationController].viewControllers count] - 2] dismissViewControllerAnimated:true completion:nil];
-    
 }
 
 @end

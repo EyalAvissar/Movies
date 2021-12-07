@@ -14,7 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Utility : NSObject
 
 +(void)setPresentationStyle:(UIView *)view;
-+(void)addMenuButton:(UIViewController *)controller;
 
 @end
 

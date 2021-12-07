@@ -7,6 +7,7 @@
 
 #import "Utility.h"
 #import "MoviesManager.h"
+#import "ApplicationManager.h"
 
 @implementation Utility
 
@@ -19,19 +20,18 @@
     [view.window.layer addAnimation:transition forKey:kCATransition];
 }
 
-+(void)addMenuButton:(UIViewController *)controller {
-    UINavigationBar *navigationBar = [[controller navigationController] navigationBar];
-    
-    float height = navigationBar.bounds.size.height;
-    float x = navigationBar.bounds.size.width - 50;
-    UIView *blueView = [[UIView alloc] initWithFrame:CGRectMake(x, 0, controller.view.bounds.size.width, height)];
-
-    UIButton *menuButton =  [UIButton systemButtonWithImage:[UIImage imageNamed:@"person"] target:controller action:@selector(menuButtonTapped)];
-    [menuButton setTitle:@"אפשרויות" forState:UIControlStateNormal];
-        
-    [blueView addSubview:menuButton];
-    
-    [navigationBar addSubview:blueView];
-}
-
+//+(void)addMenuButton:(UIViewController *)controller {
+//    UINavigationBar *navigationBar = [[controller navigationController] navigationBar];
+//    
+//    float height = navigationBar.bounds.size.height;
+//    float x = navigationBar.bounds.size.width - 50;
+//    UIView *blueView = [[UIView alloc] initWithFrame:CGRectMake(x, 0, controller.view.bounds.size.width, height)];
+//
+//    UIButton *menuButton =  [UIButton systemButtonWithImage:[UIImage imageNamed:@"person"] target:controller action:@selector(menuButtonTapped)];
+//    [menuButton setTitle:@"אפשרויות" forState:UIControlStateNormal];
+//        
+//    [blueView addSubview:menuButton];
+//    
+//    [navigationBar addSubview:blueView];
+//}
 @end

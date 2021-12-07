@@ -48,20 +48,9 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-//    UIBarButtonItem *menu = [[UIBarButtonItem alloc] initWithTitle:@"xyz" style:UIBarButtonItemStyleDone target:self action:@selector(xyz)];
-
-    UINavigationBar *navigationBar = [[self navigationController] navigationBar];
     
-    float height = navigationBar.bounds.size.height;
-    float x = navigationBar.bounds.size.width - 50;
-    UIView *blueView = [[UIView alloc] initWithFrame:CGRectMake(x, 0, 40, height)];
-
-    UIButton *menuButton =  [UIButton systemButtonWithImage:[UIImage imageNamed:@"person"] target:self action:@selector(menuButtonTapped)];
-    [menuButton setTitle:@"אפשרויות" forState:UIControlStateNormal];
-        
-    [blueView addSubview:menuButton];
-    
-    [navigationBar addSubview:blueView];
+    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithTitle:@"אפשרויות" style:UIBarButtonItemStylePlain target:self action:@selector(menuButtonTapped)];
+    [self.navigationItem setRightBarButtonItem:menuButton];
     
 }
 

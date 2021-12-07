@@ -26,7 +26,9 @@
     [super viewDidLoad];
     
     self.mapView.delegate = self;
-    [Utility addMenuButton:self];    
+    
+    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithTitle:@"אפשרויות" style:UIBarButtonItemStylePlain target:self action:@selector(menuButtonTapped)];
+    [self.navigationItem setRightBarButtonItem:menuButton];
 }
 
 
